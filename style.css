@@ -126,8 +126,3 @@ span {
         transform: scale(1.7);
     }
 }
-
-.animate{
-    animation: showUp 0.8s;
-    color : rgb(230, 68, 68)
-}
