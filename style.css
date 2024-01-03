@@ -1,0 +1,133 @@
+* {
+    margin : 0;
+    border : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color : black;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color : white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size : 50px;
+    font-weight: bold ;
+    margin-top : 20px;
+}
+
+.btn {
+    margin : 350px auto;
+    display: flex;
+    justify-content: center;
+}
+
+#button {
+    text-transform: uppercase;
+    color : black;
+    border-radius : 10px;
+    padding : 10px;
+    background-color : white;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    transition : all 0.5s;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px white;
+}
+
+#button:hover , .replay:hover {
+    transform: scale(1.2);
+    background-color: rgb(239, 143, 230);
+    box-shadow: 0px 0px 20px black;
+}
+
+.app {
+    margin: auto;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 400px;
+    height : 400px;
+
+}
+
+.nodisplay {
+    display : none;
+}
+
+.app {
+    margin-top : 125px;
+}
+
+.block {
+    border : 1px solid white;
+    width : 100%;
+    height : 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    color : white;
+    font-size : 60px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.error {
+    text-align: center;
+    font-size : 20px;
+    color : red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.div {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.result {
+    color : white;
+}
+
+.restart {
+    display: flex;
+    justify-content: flex-end;
+    margin : 0px 50px;
+}
+
+.replay {
+    padding : 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px white;
+    cursor: pointer;
+    transition: all 0.5s;
+    animation: showUp 0.8s;
+}
+
+.replay img {
+    width : 50px;
+    height : auto;
+}
+
+
+@keyframes showUp {
+    from {
+        transform: scale(1.7);
+    }
+}
+
+.animate{
+    animation: showUp 0.8s;
+    color : rgb(230, 68, 68)
+}
